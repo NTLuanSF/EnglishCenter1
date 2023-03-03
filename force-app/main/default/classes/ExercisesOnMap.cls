@@ -46,12 +46,7 @@ public with sharing class ExercisesOnMap {
     }
     //tìm ra value của key 'opportunity'
     public  void getValueOfKeyOpportunity(Map<string,Integer> newMap) {
-        for(String key : newMap.keySet()){
-            if(key == 'Opportunity'){
-                integer value = newMap.get(key);
-                system.debug('value của Key "Opportunity" là: ' + value);
-                break;
-            }
-        }
+        integer value = newMap.get('Opportunity');
+        system.debug('value của Key "Opportunity" là: ' + value);
    }
 }
