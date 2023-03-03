@@ -16,8 +16,11 @@ public virtual class Payment {
 
     public string status {get ; set;}
 
-    public virtual string Pay(string accountId) {
-        this.accountId = accountId;
+    public Payment(){
+        this.accountId = 'Abcd12345';
+    }
+    
+    public virtual string Pay() {
         return 'Thanh toán...' ;
     }
 
