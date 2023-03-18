@@ -1,0 +1,8 @@
+1. Select id, name from Account where CustomerPriority__c = 'Medium'
+2. Select count(id), sum(Amount) from Opportunity group by StageName
+3. Select count(id) from Opportunity where StageName = 'Closed Won' group by AccountId
+4. Select name, AccountNumber, type, (select name, Email , accountId from Contacts) from account
+5. select Name, AccountNumber,  (select CaseNumber, Subject, Status from Cases) from account
+6. FIND {.com} IN ALL FIELDS RETURNING Lead, Contact
+7. FIND {Pyramid} IN ALL FIELDS RETURNING Account, Opportunity
+	
