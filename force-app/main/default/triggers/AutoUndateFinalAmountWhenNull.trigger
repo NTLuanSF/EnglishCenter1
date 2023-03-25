@@ -1,4 +1,4 @@
-trigger AutoUndateFinalAmountWhenNull on Payment__c (before insert, before update, after insert) {
+trigger AutoUndateFinalAmountWhenNull on Payment__c (before insert, before update, after insert, after update) {
     if(trigger.isBefore && trigger.isInsert){
         PaymentTriggerHandle.UpdateFinalAmout(trigger.new);
     }
@@ -10,5 +10,11 @@ trigger AutoUndateFinalAmountWhenNull on Payment__c (before insert, before updat
     if(trigger.isAfter && trigger.isInsert){
         PaymentTriggerHandle.createNewTaskWhenCreatPayment(trigger.new);
     }
-
+    
+    if(trigger.isAfter && trigger.isUpdate){
+        //update Number of Payment
+        QueueableTriggerHandlePayment myJob = new QueueableTriggerHandlePayment(trigger.new);
+        System.enqueueJob(myJob);
+        
+    }
 }
