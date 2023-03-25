@@ -7,4 +7,4 @@ public class ScheduleTotalFinalAmountPaymentTest {
         system.schedule('My Job', scheduleExpression, schedule);
 
     }
-}
+} 

@@ -19,4 +19,4 @@ public class QueueableTriggerHandlePayment implements Queueable {
      }
      update(accountList);
     }
-}
+} 

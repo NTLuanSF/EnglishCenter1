@@ -22,4 +22,4 @@ public class BatchJobTotalThisMonthPaymentAmount implements Database.Batchable<s
     public void finish(Database.BatchableContext context) {
         System.debug('Batch job finished successfully!');
     }
-}
+} 

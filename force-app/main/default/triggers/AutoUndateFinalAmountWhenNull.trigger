@@ -17,4 +17,4 @@ trigger AutoUndateFinalAmountWhenNull on Payment__c (before insert, before updat
         System.enqueueJob(myJob);
         
     }
-}
+} 

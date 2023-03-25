@@ -8,4 +8,4 @@ public class ContactTriggerHandle {
         }
         update accountList;
     }
-}
+} 

@@ -3,4 +3,4 @@ public class ScheduleTotalFinalAmountPayment implements Schedulable {
         BatchJobTotalThisMonthPaymentAmount batch = new BatchJobTotalThisMonthPaymentAmount();
         Database.executeBatch(batch);
     }
-}
+} 

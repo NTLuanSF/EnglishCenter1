@@ -11,4 +11,4 @@ trigger UpdateFieldNumberofContactInAccount on Contact (after insert, after dele
         }
     }
             ContactTriggerHandle.updateNumberOfContact(accountIds);
-}
+} 
