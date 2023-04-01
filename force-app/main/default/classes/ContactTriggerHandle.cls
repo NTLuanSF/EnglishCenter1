@@ -9,6 +9,8 @@ public class ContactTriggerHandle {
         }
         update accountList;
     }
+
+    //Update dữ liệu từ https://jsonplaceholder.typicode.com/users/ + userId 
     @future (callout=true)
     public static void UpdateDataFromExtenalSystem(List<Id> contactIds){
         Http http = new Http();

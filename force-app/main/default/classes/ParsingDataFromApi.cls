@@ -1,5 +1,5 @@
 public with sharing class ParsingDataFromApi {
-    
+    //lấy dữ liệu từ json và parsing data sang UserWrapper class
     public static void GetDataFromApi(){
         HttpRequest request = new HttpRequest();
         request.setEndpoint('https://jsonplaceholder.typicode.com/posts');
